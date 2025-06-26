@@ -1,4 +1,16 @@
-# 🛍️ E-commerce Dashboard API
+# 🛍️ 7Tech-Eccomerce
+
+**Developed from scratch by [Omar Abi Farraj](https://github.com/omar7tech)**
+
+- **GitHub**: [@omar7tech](https://github.com/omar7tech)
+
+---
+
+## 📄 Copyright
+
+© 2025 **Omar Abi Farraj (omar7tech)**. All rights reserved.
+
+This project is developed and maintained by Omar Abi Farraj. Unauthorized copying, distribution, or use of this software is strictly prohibited.
 
 A modern, feature-rich e-commerce platform built with Laravel 12, Filament 3, and Livewire 3. This application provides a complete e-commerce solution with an admin dashboard, customer-facing store, and comprehensive product management system.
 
@@ -284,13 +296,12 @@ If you encounter any issues or have questions:
 **Developed from scratch by [Omar Abi Farraj](https://github.com/omar7tech)**
 
 - **GitHub**: [@omar7tech](https://github.com/omar7tech)
-- **Portfolio**: [omar7tech.com](https://omar7tech.com)
 
 ---
 
 ## 📄 Copyright
 
-© 2024 **Omar Abi Farraj (omar7tech)**. All rights reserved.
+© 2025 **Omar Abi Farraj (omar7tech)**. All rights reserved.
 
 This project is developed and maintained by Omar Abi Farraj. Unauthorized copying, distribution, or use of this software is strictly prohibited.
 
