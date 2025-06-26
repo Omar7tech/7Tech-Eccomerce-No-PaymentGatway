@@ -60,7 +60,7 @@ A modern, feature-rich e-commerce platform built with Laravel 12, Filament 3, an
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Omar7tech/7Tech-Eccomerce-No-PaymentGatway
    cd Eccomerce-Dashboard-API
    ```
 
