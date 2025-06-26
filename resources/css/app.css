@@ -1,0 +1,295 @@
+@import 'tailwindcss';
+
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@plugin "@tailwindcss/typography";
+
+@plugin "daisyui" {
+    themes: all;
+}
+
+
+@plugin "daisyui/theme" {
+    name: "OmarTheme";
+    default: false;
+    prefersdark: false;
+    color-scheme: "dark";
+    /* Base Colors - Deep midnight blues with excellent contrast */
+    --color-base-100: oklch(12% 0.008 240.5);
+    /* Deep midnight background */
+    --color-base-200: oklch(18% 0.012 242.8);
+    /* Slightly lighter panels */
+    --color-base-300: oklch(24% 0.015 244.2);
+    /* Card borders and dividers */
+    --color-base-content: oklch(94% 0.008 248.3);
+    /* High contrast text */
+
+    /* Primary - Electric blue with perfect accessibility */
+    --color-primary: oklch(68% 0.195 255.8);
+    /* Vibrant electric blue */
+    --color-primary-content: oklch(98% 0.005 260.1);
+    /* Pure white on primary */
+
+    /* Secondary - Sophisticated purple accent */
+    --color-secondary: oklch(65% 0.168 285.4);
+    /* Rich purple */
+    --color-secondary-content: oklch(96% 0.008 285.8);
+
+    /* Accent - Warm coral for highlights */
+    --color-accent: oklch(72% 0.145 15.2);
+    /* Sophisticated coral */
+    --color-accent-content: oklch(25% 0.045 18.6);
+
+    /* Neutral - Professional grays */
+    --color-neutral: oklch(28% 0.012 242.5);
+    /* Cool neutral */
+    --color-neutral-content: oklch(92% 0.006 246.8);
+
+    /* Status Colors - Optimized for dark theme */
+    --color-info: oklch(75% 0.128 220.8);
+    /* Cool info blue */
+    --color-info-content: oklch(22% 0.048 225.4);
+
+    --color-success: oklch(78% 0.165 145.6);
+    /* Fresh success green */
+    --color-success-content: oklch(18% 0.052 148.2);
+
+    --color-warning: oklch(85% 0.158 72.4);
+    /* Warm amber warning */
+    --color-warning-content: oklch(22% 0.068 68.8);
+
+    --color-error: oklch(68% 0.175 25.8);
+    /* Clear error red */
+    --color-error-content: oklch(95% 0.012 28.4);
+
+    /* Border Radius - Modern rounded design */
+    --radius-selector: 0.375rem;
+    /* Subtle button rounding */
+    --radius-field: 0.5rem;
+    /* Input field rounding */
+    --radius-box: 0.75rem;
+    /* Card and container rounding */
+
+    /* Sizing */
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    /* Effects */
+    --border: 1px;
+    --depth: 2;
+    /* Enhanced shadow depth */
+    --noise: 0.05;
+    /* Subtle texture noise */
+}
+
+
+
+
+
+
+
+@plugin "daisyui/theme" {
+    name: "OmarLightTheme";
+    default: false;
+    prefersdark: false;
+    color-scheme: "light";
+    --color-base-100: oklch(98% 0.002 247.839);
+    --color-base-200: oklch(96% 0.003 264.542);
+    --color-base-300: oklch(92% 0.006 264.531);
+    --color-base-content: oklch(21% 0.034 264.665);
+    --color-primary: oklch(84% 0.238 128.85);
+    --color-primary-content: oklch(27% 0.072 132.109);
+    --color-secondary: oklch(85% 0.199 91.936);
+    --color-secondary-content: oklch(28% 0.066 53.813);
+    --color-accent: oklch(70% 0.191 22.216);
+    --color-accent-content: oklch(25% 0.092 26.042);
+    --color-neutral: oklch(13% 0.028 261.692);
+    --color-neutral-content: oklch(98% 0.002 247.839);
+    --color-info: oklch(62% 0.214 259.815);
+    --color-info-content: oklch(97% 0.014 254.604);
+    --color-success: oklch(76% 0.233 130.85);
+    --color-success-content: oklch(98% 0.031 120.757);
+    --color-warning: oklch(70% 0.213 47.604);
+    --color-warning-content: oklch(98% 0.016 73.684);
+    --color-error: oklch(63% 0.237 25.331);
+    --color-error-content: oklch(97% 0.013 17.38);
+    --radius-selector: 0.5rem;
+    --radius-field: 0rem;
+    --radius-box: 0rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
+}
+
+
+
+
+.auto-scroll {
+    animation: scroll 25s linear infinite;
+    width: 200%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover .product-actions {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-actions {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.category-card {
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: scale(1.03);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-15px);
+    }
+
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+
+[x-cloak] {
+    display: none !important;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Smooth gradient animation */
+@keyframes gradient-shift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.gradient-animate {
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease infinite;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(var(--b2));
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(var(--p));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--pf));
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.swipe-container {
+    scroll-behavior: smooth;
+    touch-action: pan-x;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+}
+
+.swipe-container:active {
+    cursor: grabbing;
+}
