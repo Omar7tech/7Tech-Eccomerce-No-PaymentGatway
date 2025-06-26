@@ -276,3 +276,21 @@ If you encounter any issues or have questions:
 ---
 
 **Made with ❤️ using Laravel, Filament, and Livewire**
+
+---
+
+## 👨‍💻 Developer
+
+**Developed from scratch by [Omar Abi Farraj](https://github.com/omar7tech)**
+
+- **GitHub**: [@omar7tech](https://github.com/omar7tech)
+- **Portfolio**: [omar7tech.com](https://omar7tech.com)
+
+---
+
+## 📄 Copyright
+
+© 2024 **Omar Abi Farraj (omar7tech)**. All rights reserved.
+
+This project is developed and maintained by Omar Abi Farraj. Unauthorized copying, distribution, or use of this software is strictly prohibited.
+
